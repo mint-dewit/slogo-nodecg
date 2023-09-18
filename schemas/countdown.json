@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "onAir": {
+            "type": "boolean",
+            "default": false
+        },
+        "start": {
+            "type": "string",
+            "default": "00:00"
+        }
+    },
+    "required": [
+        "onAir"
+    ],
+    "default": {
+        "onAir": false
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "colours": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "main": {
+                    "type": "string",
+                    "default": "eda413"
+                },
+                "secondary": {
+                    "enum": [
+                        "light",
+                        "dark"
+                    ],
+                    "default": "light"
+                }
+            }
+        }
+    },
+    "required": [
+        "colours"
+    ]
+}

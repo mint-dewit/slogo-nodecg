@@ -1,0 +1,29 @@
+:root {
+	--fill-color: #dbdbdb;
+	--primary-accent-color: rgba(0, 48, 99, 0);
+	--secondary-accent-color: rgba(0, 48, 99, 0);
+	--primary-text-color: white;
+	--secondary-text-color: black;
+}
+* {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-rendering: geometricPrecision;
+	font-kerning: normal;
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--primary-text-color);
+}
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
