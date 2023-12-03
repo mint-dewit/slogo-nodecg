@@ -7,6 +7,7 @@
 
 export interface Straps {
 	onAir: string;
+	selected?: string;
 	items: {
 		id: string;
 		f0?: string;

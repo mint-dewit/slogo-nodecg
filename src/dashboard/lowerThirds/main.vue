@@ -58,7 +58,11 @@ const show = (id: string) => {
 			</div>
 		</div>
 
-		<div class="row items-center" v-for="(item, i) in l3ds?.data?.items" :key="item.id">
+		<div
+			:class="['row', 'items-center', item.id === l3ds?.data?.selected && 'selected']"
+			v-for="(item, i) in l3ds?.data?.items"
+			:key="item.id"
+		>
 			<div class="col-auto q-ma-sm">{{ i + 1 }}.</div>
 			<div class="col q-ma-sm">{{ item.f0 }}</div>
 			<div class="col q-ma-sm">{{ item.f1 }}</div>
@@ -74,3 +78,13 @@ const show = (id: string) => {
 		</div>
 	</div>
 </template>
+
+<style scoped>
+.selected::before {
+	content: ' ';
+	position: fixed;
+
+	height: 28px;
+	border-left: #1876d2 solid 3px;
+}
+</style>

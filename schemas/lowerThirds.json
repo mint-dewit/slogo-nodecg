@@ -7,6 +7,10 @@
       "type": "string",
       "default": ""
     },
+    "selected": {
+      "type": "string",
+      "default": ""
+    },
     "items": {
       "type": "array",
       "items": {

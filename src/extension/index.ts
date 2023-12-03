@@ -15,4 +15,5 @@ export = (nodecg: NodeCG): void => {
 	 */
 	set(nodecg)
 	require('./example')
+	require('./api')
 }
